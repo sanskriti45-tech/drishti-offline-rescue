@@ -1,0 +1,19 @@
+{
+  "name": "Drishti — Disaster Intelligence Platform",
+  "short_name": "Drishti",
+  "description": "Offline-first disaster intelligence and rescue platform. When the network goes dark, no one becomes invisible.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0fdf4",
+  "theme_color": "#059669",
+  "orientation": "portrait-primary",
+  "categories": ["emergency", "health", "safety"],
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
