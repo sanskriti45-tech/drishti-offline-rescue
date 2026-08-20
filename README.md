@@ -1,159 +1,379 @@
-Drishti — Disaster Intelligence
 
-Offline-first disaster intelligence and emergency response platform.
+# Drishti — Disaster Intelligence
 
-Live Demo — Drishti
+> **An offline-first disaster intelligence and emergency response platform designed to help people stay informed, connected, and prepared when conventional communication infrastructure fails.**
 
-Drishti is a disaster-response platform designed to help people communicate, coordinate, and access critical information during emergencies — even when internet connectivity is unreliable or unavailable.
+**Live Demo:** [Drishti — Disaster Intelligence](https://drishti-offline-rescue-main.vercel.app/?utm_source=chatgpt.com)
+**Repository:** [GitHub Repository](https://github.com/sanskriti45-tech/drishti-offline-rescue?utm_source=chatgpt.com)
 
-It focuses on making emergency assistance faster, more accessible, and resilient in real-world disaster scenarios.
+---
 
-🚨 Why Drishti?
+## 🚨 About Drishti
 
-During disasters, communication infrastructure can become unreliable. People may lose access to:
+**Drishti** is an offline-first disaster intelligence platform built to support communities during emergencies when internet connectivity and traditional communication infrastructure may be unreliable or unavailable.
 
-Internet connectivity
-Reliable communication
-Emergency information
-Location-based assistance
-Coordination with rescue teams
+During disasters such as **floods, earthquakes, cyclones, wildfires, and other large-scale emergencies**, access to timely information can become difficult. Drishti aims to bridge this gap by providing a centralized platform for **emergency information, location-based awareness, rescue coordination, and critical resources**.
 
-Drishti is built with an offline-first mindset so that critical functionality can continue working even when network connectivity is limited.
+The goal is simple:
 
-✨ Key Features
-📴 Offline-first experience — designed for situations with poor or unavailable connectivity
-🚨 Emergency assistance — helps users access and communicate critical information
-📍 Location-aware response — supports location-based emergency coordination
-🆘 SOS / emergency workflows — designed for quick access during emergencies
-📊 Disaster intelligence dashboard — provides an organized view of emergency information
-🔄 Real-time synchronization — synchronizes data when connectivity becomes available
-📱 Responsive UI — works across desktop and mobile devices
-⚡ Fast and lightweight — designed for quick interaction during high-pressure situations
-🛠️ Tech Stack
-Frontend
-React
-TypeScript
-Vite
-Tailwind CSS
-Backend
-Convex
-Convex Functions
-Real-time database
-Authentication
-Convex Authentication
-Deployment
-Vercel
-🏗️ Architecture
-                    ┌──────────────────┐
-                    │      User        │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                  ┌─────────────────────┐
-                  │   Drishti Frontend  │
-                  │ React + TypeScript   │
-                  └──────────┬──────────┘
-                             │
-                  ┌──────────┴──────────┐
-                  │                     │
-                  ▼                     ▼
-          ┌──────────────┐      ┌──────────────┐
-          │ Offline      │      │ Convex       │
-          │ Experience   │      │ Backend      │
-          └──────────────┘      └──────┬───────┘
-                                       │
-                                       ▼
-                              ┌────────────────┐
-                              │ Disaster Data  │
-                              │ & Coordination │
-                              └────────────────┘
-🚀 Getting Started
-Prerequisites
+> **When the network goes down, critical information shouldn't have to.**
+
+---
+
+## ✨ Key Features
+
+### 🆘 Emergency Assistance
+
+Provides users with access to critical emergency information and resources during disaster situations.
+
+### 📍 Disaster Intelligence
+
+Helps users understand their surroundings and access relevant disaster-related information.
+
+### 🌐 Offline-First Architecture
+
+Designed with unreliable connectivity in mind, allowing essential functionality to remain useful even when internet access is limited.
+
+### 📡 Rescue & Communication Support
+
+Facilitates the exchange of important information between people who need assistance and those coordinating rescue efforts.
+
+### 🗺️ Location Awareness
+
+Uses location-based information to help users identify relevant emergency resources and situations around them.
+
+### ⚡ Fast & Simple Interface
+
+Designed for stressful emergency environments where users need information quickly rather than navigating complicated interfaces.
+
+### 📱 Responsive Design
+
+Works across desktop and mobile devices so that users can access critical functionality from different devices.
+
+---
+
+## 🎯 Problem
+
+During a disaster, communication infrastructure can become one of the first things to fail.
+
+People may face:
+
+* Loss of internet connectivity
+* Overloaded cellular networks
+* Difficulty contacting emergency services
+* Lack of reliable local information
+* Difficulty communicating their location
+* Fragmented rescue coordination
+* Limited access to verified disaster updates
+
+Traditional emergency applications often assume that users have **stable internet connectivity**.
+
+That assumption doesn't always hold during a disaster.
+
+---
+
+## 💡 Our Solution
+
+Drishti approaches disaster response from an **offline-first perspective**.
+
+Instead of relying entirely on continuous connectivity, the platform is designed around the principle that:
+
+**Critical information should remain accessible even when connectivity is unreliable.**
+
+Drishti brings together disaster intelligence, emergency assistance, location awareness, and rescue-oriented functionality into one platform.
+
+---
+
+## 🏗️ How It Works
+
+```text
+                    ┌───────────────────┐
+                    │      User         │
+                    └─────────┬─────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │     Drishti       │
+                    │   Web Platform    │
+                    └─────────┬─────────┘
+                              │
+             ┌────────────────┼────────────────┐
+             │                │                │
+             ▼                ▼                ▼
+       ┌───────────┐    ┌────────────┐   ┌────────────┐
+       │ Disaster  │    │ Emergency  │   │ Location &  │
+       │Intelligence│   │ Assistance │   │   Rescue    │
+       └───────────┘    └────────────┘   └────────────┘
+                              │
+                              ▼
+                    ┌───────────────────┐
+                    │ Emergency-Ready   │
+                    │    Information    │
+                    └───────────────────┘
+```
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+
+### Backend
+
+* Convex
+* Convex Database
+* Convex Functions
+
+### Development
+
+* Git
+* GitHub
+* Vercel
+
+---
+
+## 🧩 Architecture
+
+Drishti follows a modern web architecture designed around a responsive frontend and reactive backend.
+
+```text
+┌─────────────────────────────┐
+│         React + Vite        │
+│          Frontend            │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│           Convex            │
+│      Backend + Database     │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│       Disaster Data &       │
+│      Emergency Services     │
+└─────────────────────────────┘
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
 
 Make sure you have:
 
-Node.js
-npm
-A Convex account
-Clone the repository
+* Node.js 18+
+* npm
+* Git
+
+### Clone the Repository
+
+```bash
 git clone https://github.com/sanskriti45-tech/drishti-offline-rescue.git
 
-
 cd drishti-offline-rescue
-Install dependencies
+```
+
+### Install Dependencies
+
+```bash
 npm install
-Configure environment variables
+```
 
-Create a .env.local file and add your Convex configuration:
+### Configure Environment Variables
 
+Create a `.env.local` file and add the required Convex configuration:
+
+```env
 VITE_CONVEX_URL=your_convex_url
 VITE_CONVEX_SITE_URL=your_convex_site_url
+```
 
-Add any additional authentication/environment variables required by your Convex configuration.
+Add any additional environment variables required by your Convex authentication configuration.
 
-Start the development server
+### Start Development Server
+
+```bash
 npm run dev
+```
 
-The application will be available locally at:
+The application should then be available at:
 
+```text
 http://localhost:5173
-📦 Production Build
+```
+
+---
+
+## 📦 Production Build
 
 To create a production build:
 
+```bash
 npm run build
+```
 
 To preview the production build locally:
 
+```bash
 npm run preview
-🌐 Live Demo
+```
 
-Try Drishti here:
+---
 
-https://drishti-offline-rescue-main.vercel.app/
+## 🌍 Deployment
 
-🎯 Use Cases
+Drishti is deployed using **Vercel**.
 
-Drishti can be useful in scenarios such as:
+**Live Application:** [drishti-offline-rescue-main.vercel.app](https://drishti-offline-rescue-main.vercel.app/?utm_source=chatgpt.com)
 
-🌊 Floods
-🌋 Natural disasters
-🌪️ Severe weather events
-🔥 Emergency situations
-🏚️ Infrastructure failures
-🚑 Community emergency response
-📡 Low-connectivity environments
-🔮 Future Improvements
+For production deployment, make sure all required Convex environment variables are configured in the deployment platform.
 
-Some possible future improvements include:
+---
 
-Mesh-network communication
-SMS-based emergency fallback
-Integration with local emergency services
-AI-powered disaster prediction
-Automated emergency alerts
-Rescue-team coordination
-Offline maps and navigation
-Multilingual emergency assistance
-IoT/sensor-based disaster monitoring
-🤝 Contributing
+## 🔐 Security & Reliability
 
-Contributions, ideas, and feedback are welcome.
+Disaster-response applications handle potentially sensitive information.
 
-Fork the repository
-Create a feature branch
-git checkout -b feature/amazing-feature
-Commit your changes
-git commit -m "Add amazing feature"
-Push the branch
-git push origin feature/amazing-feature
-Open a Pull Request
-👩‍💻 Team
+Drishti is designed with the following principles:
 
-Drishti — Disaster Intelligence
+* Minimize unnecessary data collection
+* Keep emergency interactions simple
+* Avoid unnecessary dependencies on connectivity
+* Separate frontend and backend responsibilities
+* Use environment variables for configuration and secrets
+* Design for unreliable network conditions
 
-Built with ❤️ to make emergency response more resilient, accessible, and intelligent.
+> **Never use the platform as a replacement for official emergency services.**
 
-📄 License
+---
 
-This project is intended for educational, research, and hackathon purposes. Add the appropriate license file if you plan to open-source the project formally.
+## 🧪 Testing
+
+Before deploying changes, run:
+
+```bash
+npm run build
+```
+
+You should verify:
+
+* Application loads successfully
+* Emergency features work correctly
+* Location functionality behaves as expected
+* Backend requests succeed
+* Responsive layouts work on mobile and desktop
+* Offline-related functionality behaves as intended
+
+---
+
+## 🔮 Future Roadmap
+
+Drishti can evolve into a broader disaster-response ecosystem.
+
+### 📡 Mesh Networking
+
+Enable nearby devices to exchange emergency information without requiring traditional internet connectivity.
+
+### 🤖 AI-Powered Disaster Intelligence
+
+Use AI to analyze incoming reports, identify patterns, prioritize emergencies, and summarize disaster situations.
+
+### 🛰️ Satellite Connectivity
+
+Integrate satellite communication for areas where terrestrial networks are unavailable.
+
+### 🗺️ Real-Time Disaster Mapping
+
+Provide continuously updated maps showing:
+
+* Affected areas
+* Safe zones
+* Shelters
+* Blocked roads
+* Rescue operations
+* Emergency resources
+
+### 🆘 SOS & Rescue Requests
+
+Allow users to send structured emergency requests containing:
+
+* Location
+* Emergency type
+* Number of people
+* Severity
+* Additional information
+
+### 📲 Progressive Web App
+
+Expand offline capabilities through PWA technologies, local caching, and background synchronization.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+### 1. Fork the repository
+
+```bash
+git fork https://github.com/sanskriti45-tech/drishti-offline-rescue
+```
+
+### 2. Create a branch
+
+```bash
+git checkout -b feature/your-feature
+```
+
+### 3. Make your changes
+
+Implement and test your feature.
+
+### 4. Commit your changes
+
+```bash
+git commit -m "Add: your feature"
+```
+
+### 5. Push your branch
+
+```bash
+git push origin feature/your-feature
+```
+
+### 6. Open a Pull Request
+
+Describe your changes and explain why they are useful.
+
+---
+
+## 👥 Team
+
+**Drishti — Disaster Intelligence**
+
+Built with the goal of making emergency information more accessible, resilient, and useful when people need it most.
+
+---
+
+## 📄 License
+
+This project is available under the license specified in the repository.
+
+---
+
+## ❤️ Why Drishti?
+
+Disasters don't wait for a stable internet connection.
+
+Drishti is built around a simple idea:
+
+> **Resilience should be built into the technology people depend on during emergencies.**
+
+**Built for resilience. Built for communities. Built for the moments that matter.**
